@@ -14,15 +14,16 @@
 |password             |string |nill: false|
 
 ## membersテーブル
+**association**
+- belongs_to :group
+- belongs_to :user
 
 |column|type|options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
-**association**
-- belongs_to :group
-- belongs_to :user
+
 
 ## groups
 **association**
@@ -37,8 +38,8 @@
 
 ## group_users
 **association**
-belongs_to :user
-belongs_to :group
+- belongs_to :user
+- belongs_to :group
 
 |column  |type      |
 |--------|----------|
