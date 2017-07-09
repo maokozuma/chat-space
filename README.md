@@ -29,7 +29,7 @@
 **association**
 - has_many messages
 - has_many group_users
-- belongs_to users through: :group_users
+- belongs_to user through: :group_users
 
 |column    |type      |option |
 |----------|----------|-----------|
