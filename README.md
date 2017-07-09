@@ -9,8 +9,6 @@
 |column               |type   |option  |
 |---------------------|-------|------------|
 |name                 |string |null: false |
-|email                |string |null: false|
-|password             |string |nill: false|
 
 ## message
 **association**
