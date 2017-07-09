@@ -7,7 +7,7 @@
 - has_many groups through: :group_users
 
 |column               |type   |option  |
-|:--------------------|:------|:-----------|
+|---------------------|-------|------------|
 |id                   |integer|
 |name                 |string |null: false |
 |email                |string |null: false|
@@ -15,7 +15,7 @@
 
 ## membersテーブル
 
-|Column|Type|Options|
+|column|type|options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
@@ -31,7 +31,7 @@
 - belongs_to users through: :group_users
 
 |column    |type      |option |
-|:---------|:---------|:----------|
+|----------|----------|-----------|
 |id        |integer   |           |
 |group_name|string    |null: false|
 
@@ -41,7 +41,7 @@ belongs_to :user
 belongs_to :group
 
 |column  |type      |
-|:-------|:---------|
+|--------|----------|
 |id      |integer   |
 |user_id |references|
 |group_id|references|
