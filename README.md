@@ -8,7 +8,6 @@
 
 |column               |type   |option  |
 |---------------------|-------|------------|
-|id                   |integer|
 |name                 |string |null: false |
 |email                |string |null: false|
 |password             |string |nill: false|
@@ -34,7 +33,6 @@
 
 |column    |type      |option |
 |----------|----------|-----------|
-|id        |integer   |           |
 |group_name|string    |null: false|
 
 ## group_users
@@ -44,7 +42,6 @@
 
 |column  |type      |
 |--------|----------|
-|id      |integer   |
 |user_id |references|
 |group_id|references|
 
