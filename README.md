@@ -13,7 +13,7 @@
 |email                |string |null: false|
 |password             |string |nill: false|
 
-## membersテーブル
+## message
 **association**
 - belongs_to :group
 - belongs_to :user
@@ -22,7 +22,8 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-
+|body|text|
+|image|string|
 
 
 ## groups
