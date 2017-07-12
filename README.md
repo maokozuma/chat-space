@@ -10,15 +10,15 @@
 |---------------------|-------|------------|
 |name                 |string |null: false |
 
-## message
+## messages
 **association**
 - belongs_to :group
 - belongs_to :user
 
 |column|type|options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
 |body|text|
 |image|string|
 
@@ -27,7 +27,7 @@
 **association**
 - has_many messages
 - has_many group_users
-- belongs_to user through: :group_users
+- has_many user through: :group_users
 
 |column    |type      |option |
 |----------|----------|-----------|
@@ -38,9 +38,9 @@
 - belongs_to :user
 - belongs_to :group
 
-|column  |type      |
-|--------|----------|
-|user_id |references|
-|group_id|references|
+|column  |type      |options|
+|--------|----------|-------|
+|user_id |references|foreign_key: true|
+|group_id|references|foreign_key: true|
 
 
