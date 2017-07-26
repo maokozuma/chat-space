@@ -18,10 +18,10 @@ html,body{
 .user{
 	background-color:$gray-1;
 	padding:50px 20px;
-	font-size: 16px;
+	font-size: 20px;
 	&__my-name{
 		font-weight: bold;
-		float:left
+		float:left;
 	}
 	&__new-group-btn{
 		float: right;
@@ -32,15 +32,16 @@ html,body{
 }
 
 .groups{
-  height: calc(90% - 72px);
+  height: calc(90%);
   background-color:$gray-2;
   padding:20px 20px 20px;
   &__list{
     &__name{
       h2{
-        font-size: 15px;
+        font-size: 20px;
         padding-bottom:5px;
       }
+    &__new-message
       p{
         font-size: 11px;
         padding-bottom:40px;
@@ -117,8 +118,8 @@ html,body{
 	height: 50px;
 	width:100%;
 	line-height: 50px;
-	background-color:$gray-1;
 	position:fixed;
+	background-color:$gray-1;
 	bottom:0;
 	&__text{
 		height: 50px;
