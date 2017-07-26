@@ -1,0 +1,10 @@
+@import "./reset";
+@import "./config/variables"; /* configフォルダの中の_variable/scssを読み込む */
+@import "./mixin/clearfix";
+
+@import "groups";
+@import "users";
+@import "group_users";
+@import "messages";
+
+@import "font-awesome";

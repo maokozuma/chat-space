@@ -1,0 +1,13 @@
+// scss内で使用するmixinファイルを管理するフォルダ。
+	// mixinとは、まとまったスタイルを定義することができる機能。
+	// 変数は値を定義するものでしたが、mixinはスタイルを定義するものです。
+	// mixinを利用することで、何度も同じスタイルを記述する必要がなくなります。
+	// mixinを定義するには、@mixin mixin名() {}のように記述します。
+
+@mixin clearfix() {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
