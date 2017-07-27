@@ -1,11 +1,10 @@
 .side
 	.user
 		%h1.user__my-name my-name
-		%a.user__new-group-btn ◯
-		%a.user__edit-user-info-btn △
+		%a.user__new-group-btn
+			%i.fa.fa-cog
+		%a.user__edit-user-info-btn
+			%i.fa.fa-pencil-square-o
 	.groups
 		%ul.groups__list
-
-			%li.groups__list__name
-				%h2.groups__list__name group__name
-				%p.groups__list__new-message new-message
+			= render partial: 'groups-lists'
