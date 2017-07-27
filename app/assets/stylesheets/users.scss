@@ -1,3 +1,15 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.user{
+	background-color:$gray-1;
+	padding:50px 20px;
+	font-size: 20px;
+	&__my-name{
+		font-weight: bold;
+		float:left;
+	}
+	&__new-group-btn{
+		float: right;
+	}
+	&__edit-user-info-btn{
+		float: right;
+	}
+}

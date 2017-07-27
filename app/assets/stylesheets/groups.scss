@@ -1,3 +1,17 @@
-// Place all the styles related to the groups controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.groups{
+  height: calc(90%);
+  background-color:$gray-2;
+  padding:20px 20px 20px;
+    &__list{
+	    &__name{
+			h2{
+		        font-size: 20px;
+		        padding-bottom:5px;
+		     }
+		}
+		     p{
+		        font-size: 11px;
+		        padding-bottom:40px;
+			}
+	}
+}
