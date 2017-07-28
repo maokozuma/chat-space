@@ -1,17 +1,17 @@
 .groups{
-  height: calc(90%);
-  background-color:$dark-blue-2;
-  padding:20px 20px 20px;
-    &__list{
-	    &__name{
+	height: calc(90%);
+	background-color:$bar-bule;
+	padding:20px 20px 20px;
+	&__list{
+		&__name{
 			h2{
-		        font-size: 20px;
-		        padding-bottom:5px;
-		     }
-		}
-		     p{
-		        font-size: 11px;
-		        padding-bottom:40px;
+				font-size: 20px;
+				padding-bottom:5px;
 			}
+		}
+		p{
+			font-size: 11px;
+			padding-bottom:40px;
+		}
 	}
 }
