@@ -1,0 +1,18 @@
+.contents.clearfix
+	= render partial: 'side'
+	.chat
+		.main
+			.main__left
+				%h2.main__left__group-name group-name
+				%p.main__left__member member
+
+			.main__rigth
+				%a.info__rigth__edit-btn edit-btn
+		.body
+			%ul.messages
+				= render partial: 'message'
+		.type-area
+			.type-area__text type-text
+			.type-area__image
+				.i.fa.fa-picture-o
+			.type-area__sent-btn sent-btn

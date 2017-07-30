@@ -1,0 +1,11 @@
+.side
+	.user
+		%h1.user__my-name my-name
+		%a.user__new-group-btn
+			%i.fa.fa-cog
+		%a.user__edit-user-info-btn
+			%i.fa.fa-pencil-square-o
+	.groups
+		%ul.groups__list
+			= render partial: 'groups-lists'
+
